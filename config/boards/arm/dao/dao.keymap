@@ -348,7 +348,7 @@
                 bindings = <&mo 7>;
             };
             // ##### czech layer toggle #####
-            combo_adjlayer {
+            combo_cslayer {
                 timeout-ms = <25>;
                 key-positions = <37 38>;
                 layers = <0>;
