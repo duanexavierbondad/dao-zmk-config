@@ -367,7 +367,7 @@
           &kp DEL     &kp Q  &kp W    &kp O    &kp R     &kp T                                    &kp U  &kp B     &kp N     &kp P    &kp F    &kp BSPC
           &kp TAB     &kp A  &kp S    &kp D    &kp E     &kp I                                    &kp H  &kp J     &kp K     &kp L    &kp Y    &kp ESC
           &kp BSLH    &kp Z  &kp X    &kp C    &kp V     &kp DQT                                  &kp G  &kp M     &kp COMMA &kp DOT  &kp FSLH &kp SQT
-                                               &mo 6     &mo 1          &lt 5 RET    &lt 1 SPACE  &mo 5  &mo 6
+                                               &mo 6     &mo 1          &lt 5 SPACE  &lt 1 ENTER  &mo 5  &mo 6
                         >;
                 };
                 us_num_layer {
