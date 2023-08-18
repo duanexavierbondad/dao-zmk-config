@@ -341,7 +341,7 @@
                 bindings = <&kp SEMI>;
             };
             // ##### adjust layer #####
-            combo_us_semi {
+            combo_adjlayer {
                 timeout-ms = <25>;
                 key-positions = <39 40>;
                 layers = <0>;
