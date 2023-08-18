@@ -340,12 +340,19 @@
                 layers = <0>;
                 bindings = <&kp SEMI>;
             };
-            // ##### adjust layer #####
+            // ##### adjust momentary layer #####
             combo_adjlayer {
                 timeout-ms = <25>;
                 key-positions = <39 40>;
                 layers = <0>;
                 bindings = <&mo 7>;
+            };
+            // ##### czech layer toggle #####
+            combo_adjlayer {
+                timeout-ms = <25>;
+                key-positions = <37 38>;
+                layers = <0>;
+                bindings = <&tog 3>;
             };
         };
 // ------------------------------------------------------------------------------------------------------------
