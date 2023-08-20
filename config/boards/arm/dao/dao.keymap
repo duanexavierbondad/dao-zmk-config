@@ -350,14 +350,14 @@
             // ##### czech layer toggle #####
             combo_cslayer {
                 timeout-ms = <25>;
-                key-positions = <37 38>;
+                key-positions = <10 11>;
                 layers = <0>;
-                bindings = <&tog 3>;
+                bindings = <&tog 2>;
             };
             // ##### nav layer toggle #####
             combo_navlayer {
                 timeout-ms = <25>;
-                key-positions = <36 37>;
+                key-positions = <4 5>;
                 layers = <0>;
                 bindings = <&tog 5>;
             };
