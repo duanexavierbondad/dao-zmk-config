@@ -361,7 +361,7 @@
            combo_rhyper {
                 timeout-ms = <25>;
                 key-positions = <7 8 21 22>;
-                layers = <0 1 2 3 5 6 8>
+                layers = <0 1 2 3 5 6 8>;
                 bindings = <&kp LA(LC(LS(LGUI)))>;
             };
             // -------  CS symbols  -------
