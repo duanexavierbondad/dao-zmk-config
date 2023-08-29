@@ -68,6 +68,16 @@
                      , <&macro_release &kp LCTRL>
                      ;
              };
+             emacs_c_y: emacs_c_y {
+                 label = "emacs_c_y";
+                 compatible = "zmk,behavior-macro";
+                 #binding-cells = <0>;
+                 bindings
+                     = <&macro_press &kp LCTRL>
+                     , <&macro_tap &kp Y>
+                     , <&macro_release &kp LCTRL>
+                     ;
+             };
              emacs_c_x_e: emacs_c_x_e {
                  label = "emacs_c_x_e";
                  compatible = "zmk,behavior-macro";
@@ -117,6 +127,16 @@
                  bindings
                      = <&macro_press &kp LALT>
                      , <&macro_tap &kp W>
+                     , <&macro_release &kp LALT>
+                     ;
+             };
+             emacs_m_y: emacs_m_y {
+                 label = "emacs_m_y";
+                 compatible = "zmk,behavior-macro";
+                 #binding-cells = <0>;
+                 bindings
+                     = <&macro_press &kp LALT>
+                     , <&macro_tap &kp Y>
                      , <&macro_release &kp LALT>
                      ;
              };
@@ -414,7 +434,7 @@
                 timeout-ms = <25>;
                 key-positions = <10 11>;
                 layers = <0 3>;
-                bindings = <&tog 2>;
+                bindings = <&tog 3>;
             };
             // ##### nav layer toggle #####
             //combo_navlayer {
@@ -452,8 +472,8 @@
 //                            | PROG |  NUM |  SPACE |  | ENTER | NAV  | FUN   |
                         bindings = <
           &kp DEL     &kp W  &kp F    &kp M    &kp P     &kp V                                    &kp FSLH  &kp DOT   &kp Q  &kp COMMA &kp BSLH &kp BSPC
-          &kp TAB     &kp A  &kp S    &kp D    &kp E     &kp B                                    &kp J     &kp A     &kp E  &kp I     &kp H    &kp ESC
-          &kp DQT     &kp Z  &kp X    &kp C    &kp V     &kp G                                    &kp Z     &kp U     &kp O  &kp Y     &kp K    &kp SQT
+          &kp TAB     &kp R  &kp S    &kp N    &kp T     &kp B                                    &kp J     &kp A     &kp E  &kp I     &kp H    &kp ESC
+          &kp DQT     &kp X  &kp C    &kp L    &kp D     &kp G                                    &kp Z     &kp U     &kp O  &kp Y     &kp K    &kp SQT
                                                &tog 1    &tog 2         &lt 7 SPACE  &lt 1 ENTER  &tog 8    &tog 7
                         >;
                 };
@@ -478,10 +498,10 @@
 // |   ,   |  +  |  1  |  2   |  3   |  *   |                   |  @   |  B    |  N    |  P   |   F   |   >   |
 //                            |      |      |        |  |       |      |       |
                         bindings = <
-          &kp DOLLAR &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH                  &emacs_c_w  &emacs_c_x  &emacs_m_x  &emacs_c_x_e &emacs_c_x_u  &kp RBKT
-          &kp DOT    &kp N0    &kp N4 &kp N5 &kp N6 &kp EQUAL                 &kp AT      &kp H       &kp J       &kp K        &kp L         &kp RBRC
-          &kp COMMA  &kp PLUS  &kp N1 &kp N2 &kp N3 &kp STAR                  &emacs_m_w  &kp B       &kp N       &kp P        &kp F         &kp GT
-                                             &trans &trans    &trans   &trans &trans      &trans
+          &kp DOLLAR &kp LEFT  &kp UP   &kp DOWN  &kp RIGHT &none                     &emacs_c_w  &emacs_c_x  &emacs_m_x  &emacs_c_x_e &emacs_c_x_u  &kp RBKT
+          &kp DOT    &kp LGUI  &kp LALT &kp LCTRL &kp LSHFT &none                     &kp AT      &kp H       &kp J       &kp K        &kp L         &kp RBRC
+          &kp COMMA  &none     &none    &none     &none     &none                     &emacs_m_w  &kp B       &kp N       &kp P        &kp F         &kp GT
+                                                  &trans    &trans    &trans   &trans &trans      &trans
                         >;
                 };
 
@@ -534,9 +554,9 @@
 // |   ,   |  +  |  1  |  2   |  3   |  *   |                   |  @   |  B    |  N    |  P   |   F   |   >   |
 //                            |      |      |        |  |       |      |       |
                         bindings = <
-          &kp CS_DOLLAR &kp CS_MINUS &kp CS_N7 &kp CS_N8 &kp CS_N9 &kp CS_FSLH                  &emacs_c_w  &emacs_c_x  &emacs_m_x  &emacs_c_x_e &emacs_c_x_u  &none
-          &kp CS_DOT    &kp CS_N0    &kp CS_N4 &kp CS_N5 &kp CS_N6 &kp CS_EQUAL                 &kp CS_AT   &kp CS_H    &kp CS_J    &kp CS_K     &kp CS_L      &none
-          &kp CS_COMMA  &kp CS_PLUS  &kp CS_N1 &kp CS_N2 &kp CS_N3 &kp CS_STAR                  &emacs_m_w  &kp CS_B    &kp CS_N    &kp CS_P     &kp CS_F      &none
+          &kp CS_DOLLAR &kp LEFT     &kp UP    &kp DOWN  &kp RIGHT &none                        &emacs_c_w  &emacs_c_x  &emacs_m_x  &emacs_c_x_e &emacs_c_x_u  &none
+          &kp CS_DOT    &kp LGUI     &kp LALT  &kp LCTRL &kp LSHFT &none                        &kp CS_AT   &kp CS_H    &kp CS_J    &kp CS_K     &kp CS_L      &none
+          &kp CS_COMMA  &none        &none     &none     &none     &none                        &emacs_m_w  &kp CS_B    &kp CS_N    &kp CS_P     &kp CS_F      &none
                                                          &trans    &trans       &trans   &trans &trans      &trans
                         >;
                 };
