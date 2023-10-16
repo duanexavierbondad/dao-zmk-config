@@ -206,7 +206,7 @@
                         tapping-term-ms = <200>;
                         bindings = <&kp CS_I>, <&kp CS_I_ACUTE>, <&kp CS_PSEUDOPIPE>;
                 };
-                td_j : tap_dance_j {
+                td_j: tap_dance_j {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_J";
                         #binding-cells = <0>;
