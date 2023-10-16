@@ -450,7 +450,7 @@
 // |   ,   |  +  |  1  |  2   |  3   |  *   |                   |  @   |  [    |  {    |  <   |   |   |   >   |
 //                            |      |      |        |  |       |      |       |
                         bindings = <
-&kp CS_PLUSA  &kp CS_N6    &kp CS_N7 &kp CS_N8 &kp CS_N9     &kp CS_N0                         &kp CS_TILDE   &kp CS_FSLH &kp CS_MINUS &kp CS_UNDER  &kp CS_AMPS    &kp CS_DOT
+&kp CS_PLUS   &kp CS_N6    &kp CS_N7 &kp CS_N8 &kp CS_N9     &kp CS_N0                         &kp CS_TILDE   &kp CS_FSLH &kp CS_MINUS &kp CS_UNDER  &kp CS_AMPS    &kp CS_DOT
 &kp CS_DOT    &kp CS_N1    &kp CS_N2 &kp CS_N3 &kp CS_N4     &kp CS_N5                         &kp CS_PERCENT &kp CS_STAR &kp CS_PLUS  &kp CS_CARET  &kp CS_DOLLAR  &kp CS_EQUAL
 &kp CS_MINUS  &kp LCTRL    &kp LALT  &kp LGUI  &kp CS_STAR   &kp CS_FSLH                       &kp CS_AT      &kp CS_HASH &kp LGUI     &kp LALT      &kp LCTRL      &kp CS_COMMA
                                                &kp CS_EQUAL  &kp LSHFT    &kp ENTER  &kp SPACE &kp RSHFT      &tog 4
