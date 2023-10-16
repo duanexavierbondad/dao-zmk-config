@@ -386,7 +386,7 @@
                          bindings = <
           &kp DEL     &kp F      &kp Y     &kp O     &kp U    &kp Z                               &kp W      &kp D     &kp N    &kp L     &kp B      &kp BSPC
           &kp Q       &kp H      &kp I     &kp E     &kp A    &kp J                               &kp G      &kp T     &kp R    &kp S     &kp P      &kp X
-          &kp TAB     &kp LCRTL  &kp LALT  &kp LGUI  &kp C    &kp V                               &kp K      &kp M     &kp LGUI &kp LALT  &kp LCTRL  &kp ESC
+          &kp TAB     &kp LCTRL  &kp LALT  &kp LGUI  &kp C    &kp V                               &kp K      &kp M     &kp LGUI &kp LALT  &kp LCTRL  &kp ESC
                                                      &tog 7   &kp LSHFT &lt 2 ENTER  &lt 1 SPACE  &kp RSHFT  &tog 8
                         >;
                 };
