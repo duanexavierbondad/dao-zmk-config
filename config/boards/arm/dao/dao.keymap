@@ -459,16 +459,15 @@
 
                 cs_sym_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |   $   |  -  |  7  |  8   |  9   |  /   |                   |  ~   |  /    |  -    |  _   |   &   |   ]   |
-// |   .   |  0  |  4  |  5   |  6   |  =   |                   |  %   |  *    |  +    |  ^   |   $   |   }   |
-// |   ,   |  +  |  1  |  2   |  3   |  *   |                   |  @   |  [    |  {    |  <   |   |   |   >   |
+// |   >   |  #  |  }  |  ]   |  )   |      |                   |  !   |  :    |  ;    |  \   |   '   |   ]   |
+// |   <   |  |  |  {  |  [   |  (   |  =   |                   |  ?   |  .    |  ,    |  /   |   "   |   `   |
+// |   ,   |  +  |  1  |  2   |  3   |  *   |                   |      |       |       |      |       |   >   |
 //                            |      |      |        |  |       |      |       |
-// &kp CS_LT  &kp CS_PIPE  &kp CS_LBRC  &kp CS_LBKT &kp CS_LPAR   &kp CS_EQUAL                      &kp CS_QMARK  &kp CS_DOT    &kp CS_COMMA  &kp CS_FLSH  &kp CS_DQT  &kp CS_GRAVE
                         bindings = <
-&kp CS_GT  &kp CS_HASH  &kp CS_RBRC  &kp CS_RBKT &kp CS_RPAR   &kp CS_AT                         &kp CS_EXCL   &kp CS_COLON  &kp CS_SEMI   &kp CS_BSLH  &kp CS_SQT  &none
-&kp LT     &kp PIPE     &kp LBRC     &kp LBKT    &kp LPAR      &kp EQUAL                         &kp QMARK     &kp DOT       &kp COMMA     &kp FLSH     &kp DQT     &kp GRAVE
-&none      &kp LCTRL    &kp LALT     &kp LGUI    &none         &none                             &none         &kp CS_EQUAL  &kp LGUI      &kp LALT     &kp LCTRL   &none
-                                                 &tog 5        &kp LSHFT    &kp ENTER  &kp SPACE &kp RSHFT     &none
+          &kp GT  &kp HASH  &kp RBRC  &kp RBKT  &kp RPAR  &kp AT                         &kp EXCL    &kp COLON &kp SEMI  &kp BSLH   &kp SQT     &none
+          &kp LT  &kp PIPE  &kp LBRC  &kp LBKT  &kp LPAR  &kp EQUAL                      &kp QMARK   &kp DOT   &kp COMMA &kp FSLH   &kp DQT     &kp GRAVE
+          &none   &kp LCTRL &kp LALT  &kp LGUI  &none     &none                          &none       &kp EQUAL &kp LGUI  &kp LALT   &kp LCTRL   &none
+                                                &tog 2    &kp LSHFT &kp ENTER  &kp SPACE &kp RSHFT   &none
                         >;
                 };
 
