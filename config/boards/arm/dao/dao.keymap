@@ -225,7 +225,7 @@
                         label = "TAP_DANCE_L";
                         #binding-cells = <0>;
                         tapping-term-ms = <200>;
-                        bindings = <&kp CS_L>, <&kp CS_L_STROKE>, <&kpCS_L_STROKE_CAP>;
+                        bindings = <&kp CS_L>, <&kp CS_L_STROKE>, <&kp CS_L_STROKE_CAP>;
                 };
                 td_m: tap_dance_m {
                         compatible = "zmk,behavior-tap-dance";
