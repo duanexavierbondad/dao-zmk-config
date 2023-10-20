@@ -373,9 +373,9 @@
 // 3. cs_base_layer
 // 4. cs_num_layer
 // 5. cs_sym_layer
-// 7. nav_layer
-// 8. fun_layer
-// 9. adjust_layer
+// 6. nav_layer
+// 7. fun_layer
+// 8. adjust_layer
 
                 default_layer {
 // ------------------------------------------------------------------------------------------------------------
@@ -387,7 +387,7 @@
           &kp DEL     &kp F      &kp Y     &kp O     &kp U    &kp Z                               &kp W      &kp D     &kp N    &kp L     &kp B      &kp BSPC
           &kp Q       &kp H      &kp I     &kp E     &kp A    &kp J                               &kp G      &kp T     &kp R    &kp S     &kp P      &kp X
           &kp TAB     &kp LCTRL  &kp LALT  &kp LGUI  &kp C    &kp V                               &kp K      &kp M     &kp LGUI &kp LALT  &kp LCTRL  &kp ESC
-                                                     &tog 7   &kp LSHFT &lt 2 ENTER  &lt 1 SPACE  &kp RSHFT  &tog 8
+                                                     &tog 6   &kp LSHFT &lt 2 ENTER  &lt 1 SPACE  &kp RSHFT  &tog 7
                         >;
                 };
                 us_num_layer {
@@ -408,7 +408,7 @@
 // ------------------------------------------------------------------------------------------------------------
 // |   >   |  #  |  }  |  ]   |  )   |      |                   |  !   |  :    |  ;    |  \   |   '   |   ]   |
 // |   <   |  |  |  {  |  [   |  (   |  =   |                   |  ?   |  .    |  ,    |  /   |   "   |   `   |
-// |   ,   |  +  |  1  |  2   |  3   |  *   |                   |      |       |       |      |       |   >   |
+// |   ,   |  +  |  1  |  2   |  3   |  *   |                   |      |  =    |       |      |       |   >   |
 //                            |      |      |        |  |       |      |       |
                         bindings = <
           &kp GT  &kp HASH  &kp RBRC  &kp RBKT  &kp RPAR  &kp AT                         &kp EXCL    &kp COLON &kp SEMI  &kp BSLH   &kp SQT     &none
@@ -439,7 +439,7 @@
           &kp DEL     &td_f       &td_y     &td_o     &td_u  &td_z                               &td_w     &td_d     &td_n     &td_l        &td_p       &kp BSPC
           &td_q       &td_h       &td_i     &td_e     &td_a  &td_j                               &td_g     &td_t     &td_r     &td_s        &td_p       &td_x
           &kp TAB     &kp LCTRL   &kp LALT  &kp LGUI  &td_c  &td_v                               &td_k     &td_m     &kp LGUI  &kp LALT     &kp LCTRL   &kp ESC
-                                                      &tog 7 &kp LSHFT &lt 5 SPACE  &lt 4 ENTER  &kp LSHFT &tog 8
+                                                      &tog 6 &kp LSHFT &lt 5 SPACE  &lt 4 ENTER  &kp LSHFT &tog 7
                        >;
                 };
 
@@ -466,8 +466,8 @@
                         bindings = <
           &kp CS_GT  &kp CS_HASH  &kp CS_RBRC  &kp CS_RBKT  &kp CS_RPAR  &kp CS_AT                         &kp CS_EXCL    &kp CS_COLON &kp CS_SEMI  &kp CS_BSLH   &kp CS_SQT     &none
           &kp CS_LT  &kp CS_PIPE  &kp CS_LBRC  &kp CS_LBKT  &kp CS_LPAR  &kp CS_EQUAL                      &kp CS_QMARK   &kp CS_DOT   &kp CS_COMMA &kp CS_FSLH   &kp CS_DQT     &kp CS_GRAVE
-          &none   &kp LCTRL &kp LALT  &kp LGUI  &none     &none                          &none       &kp EQUAL &kp LGUI  &kp LALT   &kp LCTRL   &none
-                                                &tog 4    &kp LSHFT &kp ENTER  &kp SPACE &kp RSHFT   &none
+          &none      &kp LCTRL    &kp LALT     &kp LGUI     &none        &none                             &none          &kp EQUAL    &kp LGUI     &kp LALT      &kp LCTRL      &none
+                                                            &tog 4       &kp LSHFT &kp ENTER  &kp SPACE    &kp RSHFT      &none
                         >;
                 };
 
@@ -476,23 +476,23 @@
           &kp C_STOP  &kp C_MUTE   &kp C_VOL_UP &kp C_VOL_DN &kp C_PLAY   &kp C_PAUSE                        &kp INS      &kp HOME   &kp UP      &kp END   &kp PG_UP  &kp BSPC
           &kp K_REDO  &kp K_UNDO   &kp K_CUT    &kp K_PASTE  &kp K_COPY   &kp K_CMENU                        &kp CAPS     &kp LEFT   &kp DOWN    &kp RIGHT &kp PG_DN  &kp ENTER
           &none       &kp LGUI     &kp LALT     &kp LCTRL    &kp LSHFT    &kp PSCRN                          &kp B        &kp H      &kp J       &kp K     &kp L      &kp F
-                                                             &tog 4       &kp LSHFT     &kp ENTER  &kp SPACE &kp LSHFT    &tog 7
+                                                             &tog 6       &kp LSHFT     &kp ENTER  &kp SPACE &kp LSHFT    &tog 6
                         >;
                 };
                 fun_layer {
                         bindings = <
-          &kp LSHFT  &kp F9       &kp F10      &kp F11      &kp F12      &tog 9                             &emacs_m_y  &none         &kp P         &none         &emacs_c_x_u  &none
+          &kp LSHFT  &kp F9       &kp F10      &kp F11      &kp F12      &tog 8                             &emacs_m_y  &none         &kp P         &none         &emacs_c_x_u  &none
           &kp LCTRL  &kp F5       &kp F6       &kp F7       &kp F8       &none                              &emacs_m_w  &kp  B        &kp N         &kp F         &emacs_c_x_e  &kp PSCRN
           &kp LALT   &kp F1       &kp F2       &kp F3       &kp F4       &none                              &emacs_c_w  &emacs_c_y    &kp LGUI      &kp LALT      &kp LCTRL     &none
-                                                            &tog 8       &kp LSHFT &kp ENTER  &kp SPACE     &kp LSHFT   &tog 8
+                                                            &tog 7       &kp LSHFT &kp ENTER  &kp SPACE     &kp LSHFT   &tog 7
                         >;
                 };
                 adjust_layer {
                         bindings = <
-          &bootloader   &none          &none          &none          &none          &tog 9                                       &none          &none          &none          &none          &none          &none
+          &bootloader   &none          &none          &none          &none          &tog 8                                       &none          &none          &none          &none          &none          &none
           &bt BT_CLR    &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4                                 &none          &none          &none          &none          &none          &none
           &sys_reset    &none          &none          &none          &none          &none                                        &none          &none          &none          &none          &none          &none
-                                                                     &tog 9         &none          &none          &none          &none          &tog 9
+                                                                     &tog 8         &none          &none          &none          &none          &tog 8
                         >;
                 };
         };
