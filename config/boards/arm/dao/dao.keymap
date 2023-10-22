@@ -392,9 +392,9 @@
                 };
                 us_num_layer {
 // ------------------------------------------------------------------------------------------------------------
-// |   $   |  -  |  7  |  8   |  9   |  /   |                   |  ~   |  /    |  -    |  _   |   &   |       |
-// |   .   |  0  |  4  |  5   |  6   |  =   |                   |  %   |  *    |  +    |  ^   |   $   |       |
-// |   ,   |  +  |  1  |  2   |  3   |  *   |                   |  @   |       |       |      |       |       |
+// |   +   |  6  |  7  |  8   |  9   |  0   |                   |  ~   |  /    |  -    |  _   |   &   |  .    |
+// |   .   |  1  |  2  |  3   |  4   |  5   |                   |  %   |  *    |  +    |  ^   |   $   |  =    |
+// |   -   |LCTRL|LALT | LGUI |  *   |  /   |                   |  @   |  #    | LGUI  | LALT | LCTRL |  ,    |
 //                            |      |      |        |  |       |      |       |
                         bindings = <
           &kp PLUS   &kp N6    &kp N7    &kp N8    &kp N9    &kp N0                         &kp TILDE   &kp FSLH &kp MINUS &kp UNDER  &kp AMPS    &kp DOT
@@ -436,10 +436,10 @@
 //                            | NAV  |      |  SPACE |  | ENTER |      | FUN  |
 
                        bindings = <
-          &kp DEL     &td_f       &td_y     &td_o     &td_u  &td_z                               &td_w     &td_d     &td_n     &td_l        &td_p       &kp BSPC
+          &kp DEL     &td_f       &td_y     &td_o     &td_u  &td_z                               &td_w     &td_d     &td_n     &td_l        &td_b       &kp BSPC
           &td_q       &td_h       &td_i     &td_e     &td_a  &td_j                               &td_g     &td_t     &td_r     &td_s        &td_p       &td_x
           &kp TAB     &kp LCTRL   &kp LALT  &kp LGUI  &td_c  &td_v                               &td_k     &td_m     &kp LGUI  &kp LALT     &kp LCTRL   &kp ESC
-                                                      &tog 6 &kp LSHFT &lt 5 SPACE  &lt 4 ENTER  &kp LSHFT &tog 7
+                                                      &tog 6 &kp LSHFT &lt 5 ENTER  &lt 4 SPACE  &kp LSHFT &tog 7
                        >;
                 };
 
