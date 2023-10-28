@@ -86,16 +86,6 @@ name: name##_hold_tap {                       \
     __VA_ARGS__                               \
 };
 
-// one-line tap dance
-#define TD(name, tap-term, ...)                \
-name: name##_td {                              \
-    label           = #name;                   \
-    compatible      = "zmk,behavior-tap-dance";\
-    tapping-term-ms = <tap_term>;              \
-    #binding-cells  = <0>;                     \
-    bindings        = __VA_ARGS__              \
-};
-
 // one-line combos
 #define COMBO(name, pos, lrs, kp)    \
 combo_##name {                       \
@@ -158,33 +148,6 @@ name: name##_macro {                      \
                 HTU(ldia_mosl, hold-preferred, TAPPING_TERM, &mo CSFUN, &sl CSDIA)
                 HTU(rdia_mosl, hold-preferred, TAPPING_TERM, &mo CSFUN, &sl CSDIA)
                 MOMO(msft, (MOD_LSFT|MOD_RSFT))
-                TD(cs_a, TAPPING_TERM, <&kp CS_A>, <&kp CS_A_ACUTE>, <&kp CS_AE>;)
-                TD(cs_b, TAPPING_TERM, <&kp CS_B>, <&kp CS_SZ_SMALL>, <&kp CS_SZ>;)
-                TD(cs_c, TAPPING_TERM, <&kp CS_C>, <&kp CS_C_CARON>, <&kp CS_CMARK>;)
-                TD(cs_d, TAPPING_TERM, <&kp CS_D>, <&cs_d_caron>, <&kp CS_ETA>;)
-                TD(cs_e, TAPPING_TERM, <&kp CS_E>, <&kp CS_E_CARON>, <&kp CS_EURO>;)
-                TD(cs_f, TAPPING_TERM, <&kp CS_F>, <&kp CS_DEAD_RING>, <&kp CS_DEG>;)
-                TD(cs_g, TAPPING_TERM, <&kp CS_G>, <&kp CS_CARON>, <&kp CS_RMARK>;)
-                TD(cs_h, TAPPING_TERM, <&kp CS_H>, <&kp CS_E_ACUTE>, <&kp CS_H_STROKE>;)
-                TD(cs_i, TAPPING_TERM, <&kp CS_I>, <&kp CS_I_ACUTE>, <&kp CS_PSEUDOPIPE>;)
-                TD(cs_j, TAPPING_TERM, <&kp CS_J>, <&kp CS_ACUTE>, <&kp CS_BOTTOM_SQT>;)
-                TD(cs_k, TAPPING_TERM, <&kp CS_K>, <&kp CS_DIV>, <&kp CS_HAT>;)
-                TD(cs_l, TAPPING_TERM, <&kp CS_L>, <&kp CS_L_STROKE>, <&kp CS_L_STROKE_CAP>;)
-                TD(cs_m, TAPPING_TERM, <&kp CS_M>, <&kp CS_MULT>, <&kp CS_DOT_ABOVE>;)
-                TD(cs_n, TAPPING_TERM, <&kp CS_N>, <&cs_n_caron>, <&kp CS_UARROW>;)
-                TD(cs_o, TAPPING_TERM, <&kp CS_O>, <&cs_o_acute>, <&kp CS_RING>;)
-                TD(cs_p, TAPPING_TERM, <&kp CS_P>, <&kp CS_UMLAUT>, <&kp CS_PARAG>;)
-                TD(cs_q, TAPPING_TERM, <&kp CS_Q>, <&kp CS_D_STROKE>, <&kp CS_D_STROKE_CAP>;)
-                TD(cs_r, TAPPING_TERM, <&kp CS_R>, <&kp CS_R_CARON>, <&kp CS_DARROW>;)
-                TD(cs_s, TAPPING_TERM, <&kp CS_S>, <&kp CS_S_CARON>, <&kp CS_RARROW>;)
-                TD(cs_t, TAPPING_TERM, <&kp CS_T>, <&cs_t_caron>, <&kp CS_LARROW>;)
-                TD(cs_u, TAPPING_TERM, <&kp CS_U>, <&kp CS_U_RING>, <&kp CS_UPPER_SQT_L>;)
-                TD(cs_v, TAPPING_TERM, <&kp CS_V>, <&kp CS_OCROSS>, <&kp CS_OCROSS_CAP>;)
-                TD(cs_w, TAPPING_TERM, <&kp CS_W>, <&kp CS_U_ACUTE>, <&kp CS_OMEGA>;)
-                TD(cs_x, TAPPING_TERM, <&kp CS_X>, <&kp CS_SECT>, <&kp CS_NEGATE>;)
-                TD(cs_y, TAPPING_TERM, <&kp CS_Y>, <&kp CS_Y_ACUTE>, <&kp CS_YEN>;)
-                TD(cs_z, TAPPING_TERM, <&kp CS_Z>, <&kp CS_Z_CARON>, <&kp CS_UPPER_SQT_R>;)
-
         };
 
         combos {
