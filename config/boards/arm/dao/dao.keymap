@@ -139,7 +139,7 @@ name: name##_macro {                      \
                 HTK(rhrm, balanced, TAPPING_TERM)
                 HTMOSL(ldia_mosl, hold-preferred, TAPPING_TERM)
                 HTMOSL(rdia_mosl, hold-preferred, TAPPING_TERM)
-                msft{
+                msft: morph_shift {
                     label          = "msft";
                     compatible     = "zmk,behavior-mod-morph";
                     #binding-cells = <2>;
