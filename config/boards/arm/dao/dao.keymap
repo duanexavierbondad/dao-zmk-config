@@ -265,7 +265,7 @@ name: name##_macro {                      \
                 us_nav_layer {
                         bindings = <
           &kp C_STOP &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_PLAY &kp C_PAUSE                      &kp INS   &kp HOME  &kp UP   &kp END   &kp PG_UP &kp BSPC
-          &none      &kp LGUI   &kp LALT     &kp LCTRL    &kp SHIFT  &kp K_CMENU                      &kp CAPS  &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
+          &none      &kp LGUI   &kp LALT     &kp LCTRL    &kp LSHFT  &kp K_CMENU                      &kp CAPS  &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
           &kp K_REDO &kp K_UNDO &kp K_CUT    &kp K_PASTE  &kp K_COPY &kp PSCRN                        &kp B     &kp H     &kp J    &kp K     &kp L     &kp F
                                                           &to USDEF  &to USDEF   &kp ENTER  &kp SPACE &to USDEF &to USDEF
                         >;
@@ -274,7 +274,7 @@ name: name##_macro {                      \
                 us_fun_layer {
                         bindings = <
           &kp LSHFT &kp F9 &kp F10 &kp F11 &kp F12   &tog USADJ                     &none       &emacs_c_y &emacs_c_w &emacs_m_w &emacs_m_y &none
-          &kp LCTRL &kp F5 &kp F6  &kp F7  &kp F8    &input_lng                     &emacs_m_x  &kp SHIFT  &kp LCTRL  &kp LALT   &kp LGUI   &none
+          &kp LCTRL &kp F5 &kp F6  &kp F7  &kp F8    &input_lng                     &emacs_m_x  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &none
           &kp LALT  &kp F1 &kp F2  &kp F3  &kp F4    &none                          &emacs_c_x  &kp B      &kp N      &kp P      &kp F      &none
                                            &to USDEF &to USDEF &kp ENTER  &kp SPACE &to USDEF   &to USDEF
                         >;
@@ -348,7 +348,7 @@ name: name##_macro {                      \
                 cs_nav_layer {
                         bindings = <
           &kp C_STOP &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_PLAY &kp C_PAUSE                      &kp INS   &kp HOME &kp UP   &kp END   &kp PG_UP &kp BSPC
-          &none      &kp LGUI   &kp LALT     &kp LCTRL    &kp SHIFT  &kp K_CMENU                      &kp CAPS  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
+          &none      &kp LGUI   &kp LALT     &kp LCTRL    &kp LSHFT  &kp K_CMENU                      &kp CAPS  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
           &kp K_REDO &kp K_UNDO &kp K_CUT    &kp K_PASTE  &kp K_COPY &kp PSCRN                        &kp B     &kp H    &kp J    &kp K     &kp L     &kp F
                                                           &to CSDEF  &to CSDEF   &kp ENTER  &kp SPACE &to CSDEF &to CSDEF
                         >;
@@ -357,7 +357,7 @@ name: name##_macro {                      \
                 cs_fun_layer {
                         bindings = <
           &kp LSHFT &kp F9 &kp F10 &kp F11 &kp F12   &tog 8                         &none       &emacs_c_z &emacs_c_w &emacs_m_w &emacs_m_z &none
-          &kp LCTRL &kp F5 &kp F6  &kp F7  &kp F8    &input_lng                     &emacs_m_x  &kp SHIFT  &kp LCTRL  &kp LALT   &kp LGUI   &none
+          &kp LCTRL &kp F5 &kp F6  &kp F7  &kp F8    &input_lng                     &emacs_m_x  &kp LSHFT  &kp LCTRL  &kp LALT   &kp LGUI   &none
           &kp LALT  &kp F1 &kp F2  &kp F3  &kp F4    &none                          &emacs_c_x  &kp B      &kp N      &kp P      &kp F      &none
                                            &to CSDEF &to CSDEF  &kp ENTER &kp SPACE &to CSDEF   &to CSDEF
                         >;
