@@ -91,7 +91,7 @@ name: name##_hold_tap {                       \
 // one-line combos
 #define COMBO(name, pos, lrs, kp)    \
 combo_##name {                       \
-    timeout-ms    = <COMBO_TIMEOUT>; \
+    timeout-ms    = <COMBO_TIME_MS>; \
     bindings      = <kp>;            \
     key-positions = <pos>;           \
     layers        = <lrs>;           \
