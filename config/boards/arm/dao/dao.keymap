@@ -167,7 +167,7 @@ name: name##_macro {                      \
             COMBO(repeat, 14 15, USDEF CSDEF, &key_repeat)
 
             COMBO(us_star, 7 19, USDEF, &kp STAR)
-            COMBO(us_flsh, 4 16, USDEF, &kp FLSH)
+            COMBO(us_fslh, 4 16, USDEF, &kp FSLH)
             COMBO(us_plus, 8 20, USDEF, &kp PLUS)
             COMBO(us_minus, 3 15, USDEF, &kp MINUS)
             COMBO(us_caret, 9 21, USDEF, &kp CARET)
@@ -190,7 +190,7 @@ name: name##_macro {                      \
             COMBO(us_qmark, 3 4, USDEF, &kp QMARK)
 
             COMBO(cs_star, 7 19, CSDEF, &kp CS_STAR)
-            COMBO(cs_flsh, 4 16, CSDEF, &kp CS_FLSH)
+            COMBO(cs_fslh, 4 16, CSDEF, &kp CS_FSLH)
             COMBO(cs_plus, 8 20, CSDEF, &kp CS_PLUS)
             COMBO(cs_minus, 3 15, CSDEF, &kp CS_MINUS)
             COMBO(cs_caret, 9 21, CSDEF, &kp CS_CARET)
