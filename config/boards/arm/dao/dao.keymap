@@ -162,7 +162,6 @@ name: name##_macro {                      \
             COMBO(csnavlayer, 22 23, CSDEF, &tog CSNAV)
             COMBO(csnumlayer, 12 13, CSDEF, &tog CSNUM)
             COMBO(csfunlayer, 12 13, CSDEF, &tog CSFUN)
-            COMBO(csfunlayer, 12 13, CSDEF, &tog CSFUN)
             COMBO(copy, 15 16, USDEF CSDEF, &kp K_COPY)
             COMBO(paste, 13 14, USDEF CSDEF, &kp K_PASTE)
             COMBO(repeat, 14 15, USDEF CSDEF, &key_repeat)
