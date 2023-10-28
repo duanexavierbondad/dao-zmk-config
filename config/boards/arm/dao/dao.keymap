@@ -306,12 +306,12 @@ name: name##_macro {                      \
                 cs_dia_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |  DEL  |  °  |  ý  |  ó   |  ů   |  ž   |                   |  ú   |  ď   |  ň    |  ẞ   |   ß   | BKSPC |
-// |   º   |     |  í  |  ě   |  á   |  ´   |                   |  ˇ   |  ť   |  ř    |  š   |   é   |   §   |
+// |   º   |  é  |  í  |  ě   |  á   |  ´   |                   |  ˇ   |  ť   |  ř    |  š   |   é   |   §   |
 // |   ¦   |  ¨  |     |      |  č   |  ı   |                   |  ×   |  ←   |  ↓    |  ↑   |   →   |   ÷   |
 //                            |      |      |  SPACE |  | ENTER |      |      |
                          bindings = <
-          &kp DEL           &kp CS_DEAD_RING &kp CS_Y_ACUTE &kp CS_O_ACUTE &kp CS_U_RING  &kp CS_Z_CARON                      &kp CS_U_ACUTE  &cs_d_caron   &cs_n_caron    &kp CS_SZ_SMALL &kp CS_SZ      &kp BSPC
-          &kp CS_DEG        &none            &kp CS_I_ACUTE &kp CS_E_ACUTE &kp CS_A_ACUTE &kp CS_ACUTE                        &kp CS_CARON    &cs_t_caron   &kp CS_R_CARON &kp CS_S_CARON  &kp CS_E_ACUTE &kp CS_SECT
+          &kp DEL           &kp CS_DEAD_RING &kp CS_Y_ACUTE &cs_o_acute    &kp CS_U_RING  &kp CS_Z_CARON                      &kp CS_U_ACUTE  &cs_d_caron   &cs_n_caron    &kp CS_SZ_SMALL &kp CS_SZ      &kp BSPC
+          &kp CS_DEG        &kp CS_E_ACUTE   &kp CS_I_ACUTE &kp CS_E_ACUTE &kp CS_A_ACUTE &kp CS_ACUTE                        &kp CS_CARON    &cs_t_caron   &kp CS_R_CARON &kp CS_S_CARON  &kp CS_E_ACUTE &kp CS_SECT
           &kp CS_PSEUDOPIPE &kp CS_UMLAUT    &none          &none          &kp CS_C_CARON &kp CS_NEGATE                       &kp CS_MULT     &kp CS_LARROW &kp CS_DARROW  &kp CS_UARROW   &kp CS_RARROW  &kp CS_DIV
                                                                            &to CSDEF      &to CSDEF      &to CSDEF  &to CSDEF &to CSDEF       &to CSDEF
                         >;
