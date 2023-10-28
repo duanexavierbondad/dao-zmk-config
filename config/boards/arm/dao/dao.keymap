@@ -89,10 +89,17 @@ name: name##_hold_tap {                       \
 };
 
 // one-line combos
-#define COMBO(name, pos, lrs, kp)    \
-combo_##name {                       \
+#define COMBOKP(name, pos, lrs, key) \
+combokp_##name {                       \
     timeout-ms    = <COMBO_TIME_MS>; \
-    bindings      = <kp>;            \
+    bindings      = <&kp key>;       \
+    key-positions = <pos>;           \
+    layers        = <lrs>;           \
+};
+#define COMBOTOG(name, pos, lrs, key)\
+combotog_##name {                       \
+    timeout-ms    = <COMBO_TIME_MS>; \
+    bindings      = <&tog key>;      \
     key-positions = <pos>;           \
     layers        = <lrs>;           \
 };
@@ -152,20 +159,25 @@ name: name##_macro {                      \
 
         combos {
             compatible = "zmk,combos";
-            COMBO(lag, 28 29, USDEF USNUM CSDEF CSNUM, &kp RALT)
-            COMBO(rag, 33 34, USDEF USNUM CSDEF CSNUM, &kp RALT)
-            COMBO(csdeflayer, 12 13, USDEF CSDEF, &tog CSDEF)
-            COMBO(csdiilayer, 24 25, CSDEF, &tog CSDII)
-            COMBO(usnavlayer, 22 23, USDEF, &tog USNAV)
-            COMBO(usnumlayer, 12 13, USDEF, &tog USNUM)
-            COMBO(usfunlayer, 12 13, USDEF, &tog USFUN)
-            COMBO(csnavlayer, 22 23, CSDEF, &tog CSNAV)
-            COMBO(csnumlayer, 12 13, CSDEF, &tog CSNUM)
-            COMBO(csfunlayer, 12 13, CSDEF, &tog CSFUN)
-            COMBO(csfunlayer, 12 13, CSDEF, &tog CSFUN)
-            COMBO(copy, 15 16, USDEF CSDEF, &kp K_COPY)
-            COMBO(paste, 13 14, USDEF CSDEF, &kp K_PASTE)
-            COMBO(repeat, 14 15, USDEF CSDEF, &key_repeat)
+            COMBOKP(lag, 28 29, USDEF USNUM CSDEF CSNUM, RALT)
+            COMBOKP(rag, 33 34, USDEF USNUM CSDEF CSNUM, RALT)
+            COMBOTOG(csdeflayer, 12 13, USDEF CSDEF, CSDEF)
+            COMBOTOG(csdiilayer, 24 25, CSDEF, CSDII)
+            COMBOTOG(usnavlayer, 22 23, USDEF, USNAV)
+            COMBOTOG(usnumlayer, 12 13, USDEF, USNUM)
+            COMBOTOG(usfunlayer, 12 13, USDEF, USFUN)
+            COMBOTOG(csnavlayer, 22 23, CSDEF, CSNAV)
+            COMBOTOG(csnumlayer, 12 13, CSDEF, CSNUM)
+            COMBOTOG(csfunlayer, 12 13, CSDEF, CSFUN)
+            COMBOTOG(csfunlayer, 12 13, CSDEF, CSFUN)
+            COMBOKP(copy, 15 16, USDEF CSDEF, K_COPY)
+            COMBOKP(paste, 13 14, USDEF CSDEF, K_PASTE)
+            combo_repeat {
+                timeout-ms    = <COMBO_TIME_MS>;
+                bindings      = <&key_repeat>;
+                key-positions = <14 15>;
+                layers        = <USDEF CSDEF>;
+            };
 
             COMBO(us_star, 7 19, USDEF, &kp STAR)
             COMBO(us_flsh, 4 16, USDEF, &kp FLSH)
