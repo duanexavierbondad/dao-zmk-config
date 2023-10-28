@@ -139,11 +139,40 @@ name: name##_macro {                      \
                 HTK(rhrm, balanced, TAPPING_TERM)
                 HTMOSL(ldia_mosl, hold-preferred, TAPPING_TERM)
                 HTMOSL(rdia_mosl, hold-preferred, TAPPING_TERM)
-                msft: morph_shift {
-                    label          = "msft";
+                csquote: csquote {
+                    label          = "csquote";
                     compatible     = "zmk,behavior-mod-morph";
-                    #binding-cells = <2>;
-                    bindings       = <&kp>, <&kp>;
+                    bindings       = <&kp CS_SQT>, <&kp CS_DQT>;
+                    mods           = <(MOD_LSFT|MOD_RSFT)>;
+                };
+                csbslh: csbslh {
+                    label          = "csbslh";
+                    compatible     = "zmk,behavior-mod-morph";
+                    bindings       = <&kp >, <&kp CS_PIPE>;
+                    mods           = <(MOD_LSFT|MOD_RSFT)>;
+                };
+                csdot: csdot {
+                    label          = "csdot";
+                    compatible     = "zmk,behavior-mod-morph";
+                    bindings       = <&kp CS_DOT>, <&kp CS_LT>;
+                    mods           = <(MOD_LSFT|MOD_RSFT)>;
+                };
+                cscomma: cscomma {
+                    label          = "cscomma";
+                    compatible     = "zmk,behavior-mod-morph";
+                    bindings       = <&kp CS_COMMA>, <&kp CS_GT>;
+                    mods           = <(MOD_LSFT|MOD_RSFT)>;
+                };
+                csfslh: csfslh {
+                    label          = "csfslh";
+                    compatible     = "zmk,behavior-mod-morph";
+                    bindings       = <&kp CS_FSLH>, <&kp CS_QMARK>;
+                    mods           = <(MOD_LSFT|MOD_RSFT)>;
+                };
+                cssemi: cssemi {
+                    label          = "cssemi";
+                    compatible     = "zmk,behavior-mod-morph";
+                    bindings       = <&kp CS_SEMI>, <&kp CS_COLON>;
                     mods           = <(MOD_LSFT|MOD_RSFT)>;
                 };
 
@@ -296,10 +325,10 @@ name: name##_macro {                      \
 // |  \↑|  | .↑< | ,↑> | TAB  |  C   |  V   |                   |  K   |  M   | ESC   |  Q   |   X   |  /↑?  |
 //                            | NAV  |      |  SPACE |  | ENTER |      | FUN  |
                          bindings = <
-          &kp DEL               &kp CS_F           &kp CS_Y             &kp CS_O         &kp CS_U               &kp CS_Z                                       &kp CS_W  &kp CS_D              &kp CS_N        &kp CS_L        &kp CS_B        &kp BSPC
-          &msft CS_SQT  CS_DQT  &lhrm LGUI CS_H    &lhrm LALT CS_I      &lhrm LCTRL CS_E &lhrm LSHFT CS_A       &kp CS_J                                       &kp CS_G  &rhrm LSHFT CS_T      &rhrm LCTRL CS_R &rhrm LALT CS_S &rhrm LGUI CS_P &msft CS_SEMI CS_COLON
-          &msft CS_BSLH CS_PIPE &msft CS_DOT CS_LT &msft CS_COMMA CS_GT &kp TAB          &kp CS_C               &kp CS_V                                       &kp CS_K  &kp CS_M              &kp ESC         &kp CS_Q        &kp CS_X        &msft CS_FSLH CS_QMARK
-                                                                                         &ldia_mosl CSFUN CSDIA &kp LSHFT  &lt CSNAV ENTER  &lt CSNUM SPACE    &kp RSHFT &rdia_mosl CSFUN CSDIA
+          &kp DEL   &kp CS_F        &kp CS_Y        &kp CS_O         &kp CS_U               &kp CS_Z                                       &kp CS_W  &kp CS_D              &kp CS_N        &kp CS_L        &kp CS_B         &kp BSPC
+          &csquote  &lhrm LGUI CS_H &lhrm LALT CS_I &lhrm LCTRL CS_E &lhrm LSHFT CS_A       &kp CS_J                                       &kp CS_G  &rhrm LSHFT CS_T      &rhrm LCTRL CS_R &rhrm LALT CS_S &rhrm LGUI CS_P &cssemi
+          &csbslh   &csdot          &cscomma        &kp TAB          &kp CS_C               &kp CS_V                                       &kp CS_K  &kp CS_M              &kp ESC         &kp CS_Q        &kp CS_X         &csfslh
+                                                                     &ldia_mosl CSFUN CSDIA &kp LSHFT  &lt CSNAV ENTER  &lt CSNUM SPACE    &kp RSHFT &rdia_mosl CSFUN CSDIA
                         >;
                 };
 
