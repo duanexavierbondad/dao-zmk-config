@@ -242,9 +242,10 @@ name: name##_macro {                      \
 // |  \↑|  | .↑< | ,↑> | TAB  |  C   |  V   |                   |  K   |  M   | ESC   |  Q   |   X   |  /↑?  |
 //                            |NUMTOG| SHFT |  SPACE |  | ENTER | SHFT | FUN  |
                          bindings = <
-          &kp DEL  &kp F            &kp Y        &kp O         &kp U         &kp Z                                       &kp W     &kp D         &kp N        &kp L        &kp B        &kp BSPC
-          &kp SQT  &mt LGUI H    &mt LALT I &mt LCRTL E &mt LSHFT A &kp J                                       &kp G     &mt LSHFT T &mt LCRL R &mt LALT S &mt LGUI P &kp SEMI
-          &kp BSLH &mt LCTRL DOT &kp COMMA    &kp TAB       &kp C         &kp V                                       &kp K     &kp M         &kp ESC      &kp Q        &kp X        &kp FSLH
+          &kp DEL  &kp F           &kp Y        &kp O         &kp U         &kp Z                                       &kp W     &kp D         &kp N        &kp L        &kp B        &kp BSPC
+          &kp SQT  &kp H           &kp I        &kp E         &kp A         &kp J                                       &kp G     &kp T         &kp R        &kp S        &kp P        &kp SEMI
+//&kp SQT  &lhrm LGUI H    &lhrm LALT I &lhrm LCRTL E &lhrm LSHFT A &kp J                                       &kp G     &rhrm LSHFT T &rhrm LCRL R &rhrm LALT S &rhrm LGUI P &kp SEMI
+          &kp BSLH &lhrm LCTRL DOT &kp COMMA    &kp TAB       &kp C         &kp V                                       &kp K     &kp M         &kp ESC      &kp Q        &kp X        &kp FSLH
                                                               &tog USNUM    &kp LSHFT &lt USNAV ENTER  &lt USNUM SPACE  &kp RSHFT &sl USFUN
                         >;
                 };
@@ -256,7 +257,7 @@ name: name##_macro {                      \
 //                            |      |      |        |  |       |      |       |
                         bindings = <
           &kp DOLLAR &kp N7        &kp N6        &kp N5         &kp N4          &kp N8                         &kp TILDE   &kp CARET         &kp UNDER        &kp HASH        &kp PIPE &kp GRAVE
-          &kp DOT    &mt LGUI N3 &mt LALT N2 &mt LCTRL N1 &mt LSHFT N0  &kp N9                         &kp PERCENT &mt LSHFT LPAR  &mt LCTRL LBKT &mt LALT LBRC &mt LGUI FLSH &kp DOLLAR
+          &kp DOT    &lhrm LGUI N3 &lhrm LALT N2 &lhrm LCTRL N1 &lhrm LSHFT N0  &kp N9                         &kp PERCENT &rhrm LSHFT LPAR  &rhrm LCTRL LBKT &rhrm LALT LBRC &rhrm LGUI FLSH &kp DOLLAR
           &kp COMMA  &kp MINUS     &kp FSLH      &kp PLUS       &kp STAR        &kp EQUAL                      &kp AT      &kp RPAR          &kp RBKT         &kp RBRC        &kp EXCL &kp AMPS
                                                                 &to USDEF       &to USDEF &kp ENTER  &kp SPACE &to USDEF   &to USDEF
                         >;
@@ -297,7 +298,7 @@ name: name##_macro {                      \
 //                            | NAV  |      |  SPACE |  | ENTER |      | FUN  |
                          bindings = <
           &kp DEL               &kp CS_F           &kp CS_Y             &kp CS_O         &kp CS_U               &kp CS_Z                                   &kp CS_W  &kp CS_D              &kp CS_N        &kp CS_L        &kp CS_B        &kp BSPC
-          &msft CS_SQT  CS_DQT  &mt LGUI CS_H    &mt LALT CS_I      &mt LCTRL CS_E &mt LSHFT CS_A       &kp CS_J                                   &kp CS_G  &mt LSHFT CS_T      &mt LCRL CS_R &mt LALT CS_S &mt LGUI CS_P &msft CS_SEMI CS_COLON
+          &msft CS_SQT  CS_DQT  &lhrm LGUI CS_H    &lhrm LALT CS_I      &lhrm LCTRL CS_E &lhrm LSHFT CS_A       &kp CS_J                                   &kp CS_G  &rhrm LSHFT CS_T      &rhrm LCRL CS_R &rhrm LALT CS_S &rhrm LGUI CS_P &msft CS_SEMI CS_COLON
           &msft CS_BSLH CS_PIPE &msft CS_DOT CS_LT &msft CS_COMMA CS_GT &kp TAB          &kp CS_C               &kp CS_V                                   &kp CS_K  &kp CS_M              &kp ESC         &kp CS_Q        &kp CS_X        &msft CS_FSLH CS_QMARK
                                                                                          &ldia_mosl CSFUN CSDIA &kp LSHFT  &lt NAV ENTER  &lt NUM SPACE    &kp RSHFT &rdia_mosl CSFUN CSDIA
                         >;
@@ -339,7 +340,7 @@ name: name##_macro {                      \
 //                            |      |      |        |  |       |      |       |
                         bindings = <
           &kp CS_DOLLAR &kp CS_N7        &kp CS_N6        &kp CS_N5         &kp CS_N4          &kp CS_N8                         &kp CS_TILDE   &kp CS_CARET         &kp CS_UNDER        &kp CS_HASH        &kp CS_PIPE        &kp CS_GRAVE
-          &kp CS_DOT    &mt LGUI CS_N3 &mt LALT CS_N2 &mt LCTRL CS_N1 &mt LSHFT CS_N0  &kp CS_N9                         &kp CS_PERCENT &mt LSHFT CS_LPAR  &mt LCTRL CS_LBKT &mt LALT CS_LBRC &mt LGUI CS_BSLH &kp CS_DOLLAR
+          &kp CS_DOT    &lhrm LGUI CS_N3 &lhrm LALT CS_N2 &lhrm LCTRL CS_N1 &lhrm LSHFT CS_N0  &kp CS_N9                         &kp CS_PERCENT &rhrm LSHFT CS_LPAR  &rhrm LCTRL CS_LBKT &rhrm LALT CS_LBRC &rhrm LGUI CS_BSLH &kp CS_DOLLAR
           &kp CS_COMMA  &kp CS_MINUS     &kp CS_FSLH      &kp CS_PLUS       &kp CS_STAR        &kp CS_EQUAL                      &kp CS_AT      &kp CS_RPAR          &kp CS_RBKT         &kp CS_RBRC        &kp CS_EXCL        &kp CS_AMPS
                                                                             &to CSDEF          &to CSDEF    &kp ENTER  &kp SPACE &to CSDEF      &to CSDEF
                         >;
