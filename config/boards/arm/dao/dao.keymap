@@ -243,8 +243,7 @@ name: name##_macro {                      \
 //                            |NUMTOG| SHFT |  SPACE |  | ENTER | SHFT | FUN  |
                          bindings = <
           &kp DEL  &kp F           &kp Y        &kp O         &kp U         &kp Z                                       &kp W     &kp D         &kp N        &kp L        &kp B        &kp BSPC
-          &kp SQT  &kp H           &kp I        &kp E         &kp A         &kp J                                       &kp G     &kp T         &kp R        &kp S        &kp P        &kp SEMI
-//&kp SQT  &lhrm LGUI H    &lhrm LALT I &lhrm LCRTL E &lhrm LSHFT A &kp J                                       &kp G     &rhrm LSHFT T &rhrm LCRL R &rhrm LALT S &rhrm LGUI P &kp SEMI
+          &kp SQT  &lhrm LGUI H    &lhrm LALT I &lhrm LCTRL E &lhrm LSHFT A &kp J                                       &kp G     &rhrm LSHFT T &rhrm LCTRL R &rhrm LALT S &rhrm LGUI P &kp SEMI
           &kp BSLH &lhrm LCTRL DOT &kp COMMA    &kp TAB       &kp C         &kp V                                       &kp K     &kp M         &kp ESC      &kp Q        &kp X        &kp FSLH
                                                               &tog USNUM    &kp LSHFT &lt USNAV ENTER  &lt USNUM SPACE  &kp RSHFT &sl USFUN
                         >;
@@ -266,7 +265,7 @@ name: name##_macro {                      \
                 us_nav_layer {
                         bindings = <
           &kp C_STOP &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_PLAY &kp C_PAUSE                      &kp INS   &kp HOME  &kp UP   &kp END   &kp PG_UP &kp BSPC
-          &none      &kp LGUI   &kp LALT     &kp LCRTL    &kp SHIFT  &kp K_CMENU                      &kp CAPS  &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
+          &none      &kp LGUI   &kp LALT     &kp LCTRL    &kp SHIFT  &kp K_CMENU                      &kp CAPS  &kp LEFT  &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
           &kp K_REDO &kp K_UNDO &kp K_CUT    &kp K_PASTE  &kp K_COPY &kp PSCRN                        &kp B     &kp H     &kp J    &kp K     &kp L     &kp F
                                                           &to USDEF  &to USDEF   &kp ENTER  &kp SPACE &to USDEF &to USDEF
                         >;
@@ -298,7 +297,7 @@ name: name##_macro {                      \
 //                            | NAV  |      |  SPACE |  | ENTER |      | FUN  |
                          bindings = <
           &kp DEL               &kp CS_F           &kp CS_Y             &kp CS_O         &kp CS_U               &kp CS_Z                                   &kp CS_W  &kp CS_D              &kp CS_N        &kp CS_L        &kp CS_B        &kp BSPC
-          &msft CS_SQT  CS_DQT  &lhrm LGUI CS_H    &lhrm LALT CS_I      &lhrm LCTRL CS_E &lhrm LSHFT CS_A       &kp CS_J                                   &kp CS_G  &rhrm LSHFT CS_T      &rhrm LCRL CS_R &rhrm LALT CS_S &rhrm LGUI CS_P &msft CS_SEMI CS_COLON
+          &msft CS_SQT  CS_DQT  &lhrm LGUI CS_H    &lhrm LALT CS_I      &lhrm LCTRL CS_E &lhrm LSHFT CS_A       &kp CS_J                                   &kp CS_G  &rhrm LSHFT CS_T      &rhrm LCTRL CS_R &rhrm LALT CS_S &rhrm LGUI CS_P &msft CS_SEMI CS_COLON
           &msft CS_BSLH CS_PIPE &msft CS_DOT CS_LT &msft CS_COMMA CS_GT &kp TAB          &kp CS_C               &kp CS_V                                   &kp CS_K  &kp CS_M              &kp ESC         &kp CS_Q        &kp CS_X        &msft CS_FSLH CS_QMARK
                                                                                          &ldia_mosl CSFUN CSDIA &kp LSHFT  &lt NAV ENTER  &lt NUM SPACE    &kp RSHFT &rdia_mosl CSFUN CSDIA
                         >;
@@ -349,7 +348,7 @@ name: name##_macro {                      \
                 cs_nav_layer {
                         bindings = <
           &kp C_STOP &kp C_MUTE &kp C_VOL_UP &kp C_VOL_DN &kp C_PLAY &kp C_PAUSE                      &kp INS   &kp HOME &kp UP   &kp END   &kp PG_UP &kp BSPC
-          &none      &kp LGUI   &kp LALT     &kp LCRTL    &kp SHIFT  &kp K_CMENU                      &kp CAPS  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
+          &none      &kp LGUI   &kp LALT     &kp LCTRL    &kp SHIFT  &kp K_CMENU                      &kp CAPS  &kp LEFT &kp DOWN &kp RIGHT &kp PG_DN &kp ENTER
           &kp K_REDO &kp K_UNDO &kp K_CUT    &kp K_PASTE  &kp K_COPY &kp PSCRN                        &kp B     &kp H    &kp J    &kp K     &kp L     &kp F
                                                           &to CSDEF  &to CSDEF   &kp ENTER  &kp SPACE &to CSDEF &to CSDEF
                         >;
