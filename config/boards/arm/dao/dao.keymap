@@ -97,16 +97,6 @@ combo_##name {                       \
     layers        = <lrs>;           \
 };
 
-// one-line mod-morph
-#define MOMO(name, mods)           \
-momo_##name {                                 \
-    label          = #name;                   \
-    compatible     = "zmk,behavior-mod-morph";\
-    #binding-cells = <2>;                     \
-    bindings       = <&kp>, <&kp>;            \
-    mods           = <mods>;                  \
-};
-
 // one-line macros
 #define MACRO(name, ...)                  \
 name: name##_macro {                      \
@@ -149,7 +139,15 @@ name: name##_macro {                      \
                 HTK(rhrm, balanced, TAPPING_TERM)
                 HTMOSL(ldia_mosl, hold-preferred, TAPPING_TERM)
                 HTMOSL(rdia_mosl, hold-preferred, TAPPING_TERM)
-                MOMO(msft, (MOD_LSFT|MOD_RSFT))
+                msft{
+                    label          = "msft";
+                    compatible     = "zmk,behavior-mod-morph";
+                    #binding-cells = <2>;
+                    bindings       = <&kp>, <&kp>;
+                    mods           = <(MOD_LSFT|MOD_RSFT)>;
+                };
+
+
         };
 
         combos {
