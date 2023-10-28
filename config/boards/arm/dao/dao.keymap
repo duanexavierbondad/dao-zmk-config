@@ -68,13 +68,14 @@ name: name##_hold_tap {                       \
     compatible      = "zmk,behavior-hold-tap";\
     tapping-term-ms = <tap_term>;             \
     quick-tap-ms    = <QUICK_TAP_MS>;         \
+    require-prior-idle-ms = <PRIOR_IDLE_MS>;  \
     #binding-cells  = <2>;                    \
     bindings        = <&kp>, <&kp>;           \
     __VA_ARGS__                               \
 };
 
 // customizeble hold-tap for any behavior
-#define HTU(name, tap_flavor, tap_term, hold, tap, ...) \
+#define HTMOSL(name, tap_flavor, tap_term, ...) \
 name: name##_hold_tap {                       \
     label           = #name;                  \
     flavor          = #tap_flavor;            \
@@ -83,7 +84,7 @@ name: name##_hold_tap {                       \
     quick-tap-ms    = <QUICK_TAP_MS>;         \
     require-prior-idle-ms = <PRIOR_IDLE_MS>;  \
     #binding-cells = <2>;                     \
-    bindings        = <hold>, <tap>;          \
+    bindings        = <&mo>, <&sl>;           \
     __VA_ARGS__                               \
 };
 
@@ -146,8 +147,8 @@ name: name##_macro {                      \
         behaviors {
                 HTK(lhrm, balanced, TAPPING_TERM)
                 HTK(rhrm, balanced, TAPPING_TERM)
-                HTU(ldia_mosl, hold-preferred, TAPPING_TERM, &mo, &sl)
-                HTU(rdia_mosl, hold-preferred, TAPPING_TERM, &mo, &sl)
+                HTMOSL(ldia_mosl, hold-preferred, TAPPING_TERM)
+                HTMOSL(rdia_mosl, hold-preferred, TAPPING_TERM)
                 MOMO(msft, (MOD_LSFT|MOD_RSFT))
         };
 
