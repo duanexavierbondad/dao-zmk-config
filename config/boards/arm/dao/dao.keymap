@@ -53,7 +53,7 @@
 };
 
 &mt {
-    quick_tap_ms = <QUICK_TAP>;
+    quick_tap_ms = <QUICK_TAP_MS>;
 };
 
 // ZMK feature macros
