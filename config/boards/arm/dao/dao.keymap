@@ -150,7 +150,7 @@ name: name##_macro {                      \
                     label          = "csbslh";
                     compatible     = "zmk,behavior-mod-morph";
                     #binding-cells = <0>;
-                    bindings       = <&kp >, <&kp CS_PIPE>;
+                    bindings       = <&kp CS_BSLH>, <&kp CS_PIPE>;
                     mods           = <(MOD_LSFT|MOD_RSFT)>;
                 };
                 csdot: csdot {
