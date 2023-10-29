@@ -25,14 +25,12 @@
 #define CSFUN 10
 #define CSADJ 11
 
-
 // Other number definitions
 #define TAPPING_TERM 150
 #define SHIFT_TAP_MS 170
 #define QUICK_TAP_MS 110
 #define PRIOR_IDLE_MS 150
 #define COMBO_TIME_MS 25
-
 
 // Behavior customizations
 // settings and homerow mods inspired by https://github.com/urob/zmk-config/
@@ -117,20 +115,24 @@ name: name##_macro {                      \
 
 / {
         macros {
+             // Czech symbols
              MACRO(cs_t_caron, <&macro_tap &kp CS_CARON &kp CS_T>;)
              MACRO(cs_n_caron, <&macro_tap &kp CS_CARON &kp CS_N>;)
              MACRO(cs_d_caron, <&macro_tap &kp CS_CARON &kp CS_D>;)
              MACRO(cs_o_acute, <&macro_tap &kp CS_ACUTE &kp CS_O>;)
+             // Emacs convenience macros
              MACRO(emacs_c_x, <&macro_press &kp LCTRL>, <&macro_tap &kp X>, <&macro_release &kp LCTRL>;)
              MACRO(emacs_c_y, <&macro_press &kp LCTRL>, <&macro_tap &kp Y>, <&macro_release &kp LCTRL>;)
              MACRO(emacs_c_z, <&macro_press &kp LCTRL>, <&macro_tap &kp Y>, <&macro_release &kp LCTRL>;)
              MACRO(emacs_c_x_e, <&macro_press &kp LCTRL> , <&macro_tap &kp X> , <&macro_release &kp LCTRL> , <&macro_tap &kp E>;)
              MACRO(emacs_c_w, <&macro_press &kp LCTRL> , <&macro_tap &kp W> , <&macro_release &kp LCTRL>;)
              MACRO(emacs_c_x_u, <&macro_press &kp LCTRL> , <&macro_tap &kp X> , <&macro_release &kp LCTRL> , <&macro_tap &kp U>;)
+             MACRO(emacs_c_x_r, <&macro_press &kp LCTRL> , <&macro_tap &kp X> , <&macro_release &kp LCTRL> , <&macro_tap &kp R>;)
              MACRO(emacs_m_x, <&macro_press &kp LALT> , <&macro_tap &kp X> , <&macro_release &kp LALT>;)
              MACRO(emacs_m_w, <&macro_press &kp LALT> , <&macro_tap &kp W> , <&macro_release &kp LALT>;)
              MACRO(emacs_m_y, <&macro_press &kp LALT> , <&macro_tap &kp Y> , <&macro_release &kp LALT>;)
              MACRO(emacs_m_z, <&macro_press &kp LALT> , <&macro_tap &kp Y> , <&macro_release &kp LALT>;)
+             // General convenience macros
              MACRO(input_lng, <&macro_press &kp LCTRL> , <&macro_press &kp LALT> , <&macro_tap &kp K> , <&macro_release &kp LCTRL> , <&macro_release &kp LALT>;)
         };
 
@@ -181,8 +183,6 @@ name: name##_macro {                      \
                     bindings       = <&kp CS_SEMI>, <&kp CS_COLON>;
                     mods           = <(MOD_LSFT|MOD_RSFT)>;
                 };
-
-
         };
 
         combos {
@@ -192,11 +192,11 @@ name: name##_macro {                      \
             COMBO(csdeflayer, 12 13, USDEF CSDEF, &tog CSDEF)
             COMBO(csdiilayer, 24 25, CSDEF, &tog CSDII)
             COMBO(usnavlayer, 22 23, USDEF, &tog USNAV)
-            COMBO(usnumlayer, 12 13, USDEF, &tog USNUM)
-            COMBO(usfunlayer, 12 13, USDEF, &tog USFUN)
+            COMBO(usnumlayer, 10 11, USDEF, &tog USNUM)
+            COMBO(usfunlayer, 34 35, USDEF, &tog USFUN)
             COMBO(csnavlayer, 22 23, CSDEF, &tog CSNAV)
-            COMBO(csnumlayer, 12 13, CSDEF, &tog CSNUM)
-            COMBO(csfunlayer, 12 13, CSDEF, &tog CSFUN)
+            COMBO(csnumlayer, 10 11, CSDEF, &tog CSNUM)
+            COMBO(csfunlayer, 34 35, CSDEF, &tog CSFUN)
             COMBO(copy, 15 16, USDEF CSDEF, &kp K_COPY)
             COMBO(paste, 13 14, USDEF CSDEF, &kp K_PASTE)
             COMBO(repeat, 14 15, USDEF CSDEF, &key_repeat)
@@ -277,9 +277,9 @@ name: name##_macro {                      \
 // |  \↑|  | .↑< | ,↑> | TAB  |  C   |  V   |                   |  K   |  M   | ESC   |  Q   |   X   |  /↑?  |
 //                            |NUMTOG| SHFT |  SPACE |  | ENTER | SHFT | FUN  |
                          bindings = <
-          &kp DEL  &kp F           &kp Y        &kp O         &kp U         &kp Z                                       &kp W     &kp D         &kp N        &kp L        &kp B        &kp BSPC
+          &kp DEL  &kp F           &kp Y        &kp O         &kp U         &kp Z                                       &kp W     &kp D         &kp N         &kp L        &kp B        &kp BSPC
           &kp SQT  &lhrm LGUI H    &lhrm LALT I &lhrm LCTRL E &lhrm LSHFT A &kp J                                       &kp G     &rhrm LSHFT T &rhrm LCTRL R &rhrm LALT S &rhrm LGUI P &kp SEMI
-          &kp BSLH &lhrm LCTRL DOT &kp COMMA    &kp TAB       &kp C         &kp V                                       &kp K     &kp M         &kp ESC      &kp Q        &kp X        &kp FSLH
+          &kp BSLH &lhrm LCTRL DOT &kp COMMA    &kp TAB       &kp C         &kp V                                       &kp K     &kp M         &kp ESC       &kp Q        &kp X        &kp FSLH
                                                               &tog USNUM    &kp LSHFT &lt USNAV ENTER  &lt USNUM SPACE  &kp RSHFT &sl USFUN
                         >;
                 };
