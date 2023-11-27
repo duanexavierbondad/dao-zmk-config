@@ -345,9 +345,9 @@ name: name##_macro {                      \
 // |   ¦   |  ž  |     |  é   |  °   |  ı   |                   |  ×   |  č   |  ý    |  ¨   |   ẞ   |       |
 //                            |      |      |  SPACE |  | ENTER |      |      |
                          bindings = <
-          &kp DEL           &kp CS_LARROW    &kp CS_UARROW  &kp CS_DARROW  &kp CS_RARROW    &kp CS_QMARK                        &kp CS_DIV      &kp CS_U_ACUTE &kp CS_U_RING  &cs_d_caron     &kp CS_SZ      &kp BSPC
-          &kp CS_DEG        &kp CS_A_ACUTE   &kp CS_R_CARON &kp CS_E_CARON &cs_n_caron      &kp CS_ACUTE                        &kp CS_CARON    &kp CS_S_CARON &kp CS_I_ACUTE &cs_t_caron     &cs_o_acute    &kp CS_SECT
-          &kp CS_PSEUDOPIPE &kp CS_Z_CARON   &kp CS_EXCL    &kp CS_E_ACUTE &kp CS_DEAD_RING &kp CS_NEGATE                       &kp CS_MULT     &kp CS_C_CARON &kp CS_Y_ACUTE &kp CS_UMLAUT   &kp CS_SZ_SMAL &none
+          &kp DEL           &kp CS_LARROW    &kp CS_UARROW  &kp CS_DARROW  &kp CS_RARROW    &kp CS_QMARK                        &kp CS_DIV      &kp CS_U_ACUTE &kp CS_U_RING  &cs_d_caron     &kp CS_SZ       &kp BSPC
+          &kp CS_DEG        &kp CS_A_ACUTE   &kp CS_R_CARON &kp CS_E_CARON &cs_n_caron      &kp CS_ACUTE                        &kp CS_CARON    &kp CS_S_CARON &kp CS_I_ACUTE &cs_t_caron     &cs_o_acute     &kp CS_SECT
+          &kp CS_PSEUDOPIPE &kp CS_Z_CARON   &kp CS_EXCL    &kp CS_E_ACUTE &kp CS_DEAD_RING &kp CS_NEGATE                       &kp CS_MULT     &kp CS_C_CARON &kp CS_Y_ACUTE &kp CS_UMLAUT   &kp CS_SZ_SMALL &none
                                                                            &to CSDEF        &to CSDEF      &to CSDEF  &to CSDEF &to CSDEF       &to CSDEF
                         >;
                 };
