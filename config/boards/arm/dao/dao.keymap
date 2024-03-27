@@ -331,9 +331,9 @@ name: name##_macro {                      \
 // |  \↑|  |  Z  |  W  | TAB  |  H   |  J   |                   |  V   |  C   |  Y    |  M   |   X   |  /↑?  |
 //                            | NAV  |      |  SPACE |  | ENTER |      | FUN  |
                          bindings = <
-          &kp DEL   &kp CS_F        &kp CS_Y        &kp CS_O         &kp CS_U               &kp CS_Z                                       &kp CS_W  &kp CS_D              &kp CS_N        &kp CS_L        &kp CS_B         &kp BSPC
-          &csquote  &lhrm LGUI CS_H &lhrm LALT CS_I &lhrm LCTRL CS_E &lhrm LSHFT CS_A       &kp CS_J                                       &kp CS_G  &rhrm LSHFT CS_T      &rhrm LCTRL CS_R &rhrm LALT CS_S &rhrm LGUI CS_P &cssemi
-          &csbslh   &csdot          &cscomma        &kp TAB          &kp CS_C               &kp CS_V                                       &kp CS_K  &kp CS_M              &kp ESC         &kp CS_Q        &kp CS_X         &csfslh
+          &kp DEL   &kp CS_Q        &kp CS_L        &kp ESC          &kp CS_P               &cscomma                                       &csdot    &kp CS_F              &kp CS_U        &kp CS_D        &kp CS_K         &kp BSPC
+          &csquote  &lhrm LGUI CS_A &lhrm LALT CS_R &lhrm LCTRL CS_E &lhrm LSHFT CS_N       &kp CS_B                                       &kp CS_G  &rhrm LSHFT CS_S      &rhrm LCTRL CS_I &rhrm LALT CS_T &rhrm LGUI CS_O &cssemi
+          &csbslh   &kp CS_Z        &kp CS_W        &kp TAB          &kp CS_H               &kp CS_J                                       &kp CS_V  &kp CS_C              &kp CS_Y        &kp CS_M        &kp CS_X         &csfslh
                                                                      &ldia_mosl CSFUN CSDIA &kp LSHFT  &lt CSNAV ENTER  &lt CSNUM SPACE    &kp RSHFT &rdia_mosl CSFUN CSDIA
                         >;
                 };
