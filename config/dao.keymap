@@ -265,6 +265,11 @@ name: name##_macro {                      \
             COMBO(cs_rbrc, 33 34, CSDEF, &kp CS_RBRC)
             COMBO(cs_excl, 1 2, CSDEF, &kp CS_EXCL)
             COMBO(cs_qmark, 3 4, CSDEF, &kp CS_QMARK)
+
+        Caps_Word {
+            bindings = <&caps_word>;
+            key-positions = <5 6>;
+        };
     };
 
     // ------------------------------------------------------------------------------------------------------------
